@@ -26,7 +26,6 @@
   <ItemGroup>
     <Content Include="112-gmail_email_mail-512.ico" />
     <Content Include="4.png" />
-    <Content Include="7.png" />
     <Content Include="login.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
