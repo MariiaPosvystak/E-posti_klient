@@ -43,7 +43,7 @@ def saada():
     
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
-    kellelt = 'oleksandraryshniak@gmail.com'
+    kellelt = 'posvystakmariia@gmail.com'
     parool = 'rlop buyk lrpk rwqx'  
 
     msg = EmailMessage()
@@ -108,17 +108,17 @@ def forms(event):
 aken=Tk()
 aken.title("E-kirja saatmine")
 aken.geometry("700x700")
-aken.configure(bg="white")
+aken.configure(bg="back")
 aken.resizable(width=False, height=True)
 aken.iconbitmap("112-gmail_email_mail-512.ico")
 
-pilt=PhotoImage(file="7.png")
-email1=Label(aken, text="EMAIL:", bg="lightblue", font=("Arial", 17), fg="black",width=7, height=1 )
-teema=Label(aken, text="TEEMA:", bg="lightblue", font=("Arial", 17), fg="black",width=7, height=1 )
-lisa=Label(aken, text="LISA:", bg="lightblue", font=("Arial", 17), fg="black", width=7, height=1)
-kiri=Label(aken, text="KIRI:", bg="lightblue", font=("Arial", 17), fg="black", width=7, height=1)
+pilt = PhotoImage(file="4.png")
+email1=Label(aken, text="EMAIL:", bg="#606060", font=("Arial", 17), fg="white", width=7, height=1)
+teema=Label(aken, text="TEEMA:", bg="#606060", font=("Arial", 17), fg="white", width=7, height=1)
+lisa=Label(aken, text="LISA:", bg="#606060", font=("Arial", 17), fg="white", width=7, height=1)
+kiri=Label(text="KIRI:", bg="#606060", font=("Arial", 17), fg="white", width=7, height=1)
 pilt_=Label(aken,image=pilt)
-t=Label(aken, text="Gmail",bg="white", font=("Arial", 20), fg="black",width=7, height=1  )
+t=Label(aken, text="Gmail", bg="black", font=("Arial", 20), fg="white", width=7, height=1)
 pilt_.grid(row=0, column=2, pady=5)
 t.grid(row=0, column=1, pady=5)
 email1.grid(row=1, column=1, pady=5)
@@ -127,28 +127,14 @@ lisa.grid(row=3, column=1,pady=5)
 kiri.grid(row=4, column=1, pady=40)
 
 
-email_=Entry(aken, bg="#DDF6FA", font=("Arial",17), fg="black",width=30)
-teema_=Entry(aken, bg="#DDF6FA", font=("Arial",17), fg="black",width=30)
-lisa_=Entry(aken, bg="#DDF6FA", font=("Arial",17), fg="black",width=30)
-kiri_=Text(aken, bg="#DDF6FA", font=("Arial",17), fg="black",width=30, height=10)
+email_=Entry(aken, bg="#606060", font=("Arial", 17), fg="white", width=30)
+teema_=Entry(aken, bg="#606060", font=("Arial", 17), fg="white", width=30)
+lisa_=Entry(aken, bg="#606060", font=("Arial", 17), fg="white", width=30)
+kiri_=Text(aken, bg="#606060", font=("Arial", 17), fg="white", width=30, height=10)
 email_.grid(row=1, column=2, pady=5, columnspan=7)
 teema_.grid(row=2, column=2, pady=5, columnspan=7)
 lisa_.grid(row=3, column=2, pady=5, columnspan=7)
 kiri_.grid(row=4, column=2, pady=5, columnspan=7, rowspan=5)
-
-aken.configure(bg="black")
-pilt = PhotoImage(file="4.png")
-email1.config(text="EMAIL:", bg="#606060", font=("Arial", 17), fg="white", width=7, height=1)
-teema.config(text="TEEMA:", bg="#606060", font=("Arial", 17), fg="white", width=7, height=1)
-lisa.config(text="LISA:", bg="#606060", font=("Arial", 17), fg="white", width=7, height=1)
-kiri.config(text="KIRI:", bg="#606060", font=("Arial", 17), fg="white", width=7, height=1)
-pilt_.config(image=pilt)
-pilt_.image=pilt
-t.config(text="Gmail", bg="black", font=("Arial", 20), fg="white", width=7, height=1)
-email_.config(bg="#606060", font=("Arial", 17), fg="white", width=30)
-teema_.config(bg="#606060", font=("Arial", 17), fg="white", width=30)
-lisa_.config(bg="#606060", font=("Arial", 17), fg="white", width=30)
-kiri_.config(bg="#606060", font=("Arial", 17), fg="white", width=30, height=10)
 
 lisa_nupp=Button(aken, text="LISA PILT", bg="lightblue", font=("Arial", 12), fg="black", relief=RAISED)
 lisa_nupp.bind("<Button-1>", muuta_lisa)
